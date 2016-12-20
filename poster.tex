@@ -1,0 +1,118 @@
+\documentclass[serif,mathserif,final]{beamer}
+\mode<presentation>{\usetheme{Lankton}}
+%\usepackage{textgreek}
+\usepackage{verbments}
+\usepackage{amsmath,amsfonts,amssymb,pxfonts,eulervm,xspace}
+\usepackage{graphicx}
+\usepackage{color}
+%\usepackage{kerkis}
+%\graphicspath{{./figures/}}
+%% coursera tells us the board will be 30in by 40in
+\usepackage[orientation=landscape,size=custom,width=101,height=76,scale=2.3,debug]{beamerposter}
+
+\newcommand{\mooculus}{\textsf{\textbf{MOOC}\upshape{ULUS}}}
+
+
+\usebackgroundtemplate%
+{%
+%    \includegraphics[width=\paperwidth,height=\paperheight]{blackness.png}%
+}
+
+
+%-- Header and footer information ----------------------------------
+\newcommand{\footleft}{\textsf{https://ximera.osu.edu/}}
+\newcommand{\footright}{\includegraphics{qrcode}}%{shawn at shawn lankton dot com}
+\title{The Ximera Project \\ You Can Make an Interactive Textbook \\
+\vspace{54pt}\large\textmd{Supported by NSF Grant DUE-1245433}}
+\author{Herb Clemens, Jim Fowler, Bart Snapp, Brian Stone}
+%-------------------------------------------------------------------
+
+
+%-- Main Document --------------------------------------------------
+\begin{document}
+{
+%\usebackgroundtemplate{\includegraphics[height=\paperheight]{blackness.png}}
+\begin{frame}[fragile]{}
+  \begin{columns}[t]
+
+    %-- Column 1 ---------------------------------------------------
+    \begin{column}{0.32\linewidth}
+
+      %-- Block 1-1
+      \begin{block}{\rule{0pt}{1in}Introduction}
+        \begin{figure}[htb]
+          \centering
+          \includegraphics[width=.9\columnwidth]{ximeraInfographic}
+        \end{figure}
+        \end{block}
+
+        \begin{block}{\rule{0pt}{1in}Begin with \LaTeX}
+\tiny
+            \begin{pyglist}[language=latex]
+\begin{problem}
+Put this distance into perspective by
+comparing this distance to ``landmarks''
+on the Earth.
+\begin{freeResponse}
+\end{freeResponse}
+\end{problem}
+
+\begin{question}
+  \begin{hint}
+    Consider $3 + 3$.
+  \end{hint}
+  $3 \times 2 = \answer{6}$
+\end{question}
+            \end{pyglist}
+      \end{block}
+
+
+    \end{column}%1
+
+    %-- Column 2 ---------------------------------------------------
+    \begin{column}{0.32\linewidth}
+
+      %-- Block 2-1
+      \begin{block}{\rule{0pt}{1in}Serve Online}
+        \begin{figure}[htb]
+          \centering
+          \includegraphics[width=.9\columnwidth]{ximeraMoon}
+        \end{figure}
+      \end{block}
+
+      \begin{block}{\rule{0pt}{1in}\raisebox{.2\height}{Fight Bit Rot}}
+\footnotesize 
+\LaTeX\ was first released in 1984.\\
+\LaTeXe\ was released in 1994. \\
+Longevity is key to preserving an author's work.
+      \end{block}
+
+    \end{column}%2
+
+    %-- Column 3 ---------------------------------------------------
+    \begin{column}{0.32\linewidth}
+
+      %-- Block 3-1
+      \begin{block}{\rule{0pt}{1in}Print on Paper}
+        \begin{figure}[htb]
+        \centering
+          \includegraphics[width=.9\columnwidth]{aBeautifulMoon.eps}
+        \end{figure}
+      \end{block}
+
+      %-- Block 3-2
+      \begin{block}{\rule{0pt}{1in}\raisebox{.2\height}{Collaborate with GitHub}}
+        \large
+        \centering
+        \begin{figure}[htb]
+        \centering
+          \includegraphics[width=.74\columnwidth]{contributors}
+        \end{figure}
+      \end{block}
+
+    \end{column}
+ 
+  \end{columns}
+\end{frame}
+}
+\end{document}
