@@ -7,3 +7,6 @@ qrcode.svg: Makefile
 
 qrcode.pdf: qrcode.svg
 	inkscape -D -z --file=$< --export-pdf=$@
+
+clean:
+	rm -f *~ *.vrb *.toc *.aux *.out *.pyg.lst *.png *.svg *.log *.snm *.nav
