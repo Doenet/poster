@@ -1,0 +1,9 @@
+*~
+*.verb
+*.toc
+*.aux
+*.out
+*.pyg.lst
+*.png
+*.svg
+*.log
