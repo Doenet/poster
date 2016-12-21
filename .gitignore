@@ -7,3 +7,6 @@
 *.png
 *.svg
 *.log
+*.verb
+*.snm
+*.nav
