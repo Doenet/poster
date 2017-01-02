@@ -4,7 +4,6 @@
 *.aux
 *.out
 *.pyg.lst
-*.png
 *.svg
 *.log
 *.snm

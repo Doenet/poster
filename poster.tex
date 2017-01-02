@@ -8,6 +8,8 @@
 \usepackage{color}
 \usepackage[orientation=landscape,size=custom,width=101,height=76,scale=2.3,debug]{beamerposter}
 
+\usepackage{wrapfig}
+
 \newcommand{\mooculus}{\textsf{\textbf{MOOC}\upshape{ULUS}}}
 
 \usepackage{tikz}
@@ -52,10 +54,14 @@
 
 %-- Header and footer information ----------------------------------
 \newcommand{\footleft}{\texttt{https://curatedcourses.org/}}
-\newcommand{\footright}{\raisebox{-1in}{\includegraphics[width=3in]{qrcode.pdf}}}
-\title{\textsf{CuratedCourses} \\
-\vspace{54pt}\large\textsf{\textmd{Supported by NSF Grant NSF DUE-1505246}}}
-\author{\large\textsf{Petra Bonfert-Taylor, Sarah Eichhorn, David Farmer, Jim Fowler}}
+\newcommand{\footright}{\scriptsize\parbox{21in}{\raggedleft\color{gray} CuratedCourses is based upon work supported
+  by the National Science Foundation under NSF DUE--1505246.\\ Any
+  opinions, findings, and conclusions or recommendations expressed in
+  this material are those of the author(s) and do not necessarily
+  reflect the views of the National Science Foundation.}
+\raisebox{-1in}{\includegraphics[width=3in]{qrcode.pdf}}}
+\title{Supported by NSF Grant NSF DUE--1505246}
+\author{Petra Bonfert-Taylor, Sarah Eichhorn, David Farmer, Jim Fowler}
 %-------------------------------------------------------------------
 
 
@@ -64,7 +70,6 @@
 {
 
 \newenvironment{sectionblock}[1]{\begin{block}{\rule{0pt}{1in}#1}}{\end{block}}
-
 
 %\usebackgroundtemplate{\includegraphics[height=\paperheight]{blackness.png}}
 \begin{frame}[fragile]{}
