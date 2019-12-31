@@ -3,7 +3,7 @@ poster.pdf: poster.tex qrcode.pdf left-column.tex middle-column.tex right-column
 	pdflatex poster.tex
 
 qrcode.svg: Makefile
-	qrencode -t svg -o $@ HTTPS://CURATEDCOURSES.ORG/
+	qrencode -t svg -o $@ HTTPS://DOENET.ORG/
 
 qrcode.pdf: qrcode.svg
 	inkscape -D -z --file=$< --export-pdf=$@
